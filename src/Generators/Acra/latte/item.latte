@@ -5,6 +5,7 @@
     <PRODUCTNAME><![CDATA[{$item->getProductName()|noescape}]]></PRODUCTNAME>
     <PRODUCT n:if="$item->getProduct()"><![CDATA[{$item->getProduct()|noescape}]]></PRODUCT>
     <DESCRIPTION><![CDATA[{$item->getDescription()|striptags|noescape}]]></DESCRIPTION>
+    <SAFETY_INSTRUCTIONS><![CDATA[{$item->getSafetyInstructions()|striptags|noescape}]]></SAFETY_INSTRUCTIONS>
     <SHORT_DESCRIPTION n:if="$item->getShortDescription()"><![CDATA[{$item->getShortDescription()|striptags|noescape}]]></SHORT_DESCRIPTION>
     <URL>{$item->getUrl()}</URL>
 
