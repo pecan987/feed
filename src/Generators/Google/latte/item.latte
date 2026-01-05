@@ -53,10 +53,6 @@
 
     <g:google_product_category n:if="$item->getGoogleProductCategory()">{$item->getGoogleProductCategory()}</g:google_product_category>
 
-
-    {if !empty($productTypes = $item->getProductTypes())}
-        <g:product_type n:foreach="$productTypes as $productType" n:if="!empty($productType->getText())">{$productType->getText()}</g:product_type>
-    {/if}
     <g:item_group_id n:if="$item->getItemGroupId()">{$item->getItemGroupId()}</g:item_group_id>
 
     {if !empty($features = $item->getFeatures())}
